@@ -1,6 +1,21 @@
+<script>
+	export let data;
+</script>
+
 <h1>Projects</h1>
-<a href="projects/1">Project 1</a>
-<br />
-<a href="projects/2">Project 2</a>
-<br />
+
+<h2>Games</h2>
+<ul>
+	{#each data.games as { slug, title }}
+		<li><a href="/projects/{slug}">{title}</a></li>
+	{/each}
+</ul>
+
+<h2>Websites</h2>
+<ul>
+	{#each data.webs as { slug, title }}
+		<li><a href="/projects/{slug}">{title}</a></li>
+	{/each}
+</ul>
+
 <a href="/">Go back</a>
