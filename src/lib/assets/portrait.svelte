@@ -3,6 +3,7 @@
 	xmlns:xlink="http://www.w3.org/1999/xlink"
 	xml:space="preserve"
 	viewBox="0 0 530.5 563.1"
+	aria-hidden="true"
 >
 	<path fill="#31c6ff" d="M0 0h530.7v563.2H0Z" />
 	<g fill="#70d0ff">
@@ -115,69 +116,72 @@
 		filter="url(#filter6956)"
 	/>
 	<path fill="#fff" d="M278.3 349.6c1 .6-4.7-4.9-9.4-4-4.6 1-1.4 1 1 1.6 2.6.9 3.1 0 8.4 2.4z" />
-	<g class="glass" id="leftG">
-		<path
-			fill="#e5efff"
-			d="M197.4 299c-5.2-.4-11-3-16.8-7.2a71.7 71.7 0 0 1-22.6-38.9 83.8 83.8 0 0 1-3-22.1c.2-2.7.5-4 1.4-6 2.2-4.4 6.8-7 16-9.1 4.7-1.2 9.6-1.9 14.5-2 14.8-.6 31 1.8 37.5 5.7a45.4 45.4 0 0 1 21.4 38.8c0 7.7-1.6 14-5.2 19.4a53 53 0 0 1-43.2 21.5z"
-		/>
-		<path
-			id="a"
-			class="invis"
-			fill="none"
-			stroke="none"
-			stroke-linecap="butt"
-			stroke-linejoin="miter"
-			stroke-opacity="1"
-			stroke-width="1.3"
-			d="M161.3 258.6s16.3 4.8 44.5 5.5c29.7.8 41.7-.5 41.7-.5"
-		/>
-		<path
-			fill="#c6deff"
-			d="m157.8 224.8 4.5 36.1c6 8.4 12.1 17 18.4 25.3 3.6 2.5 6.8 5.9 10.8 7.8l18.1 4.6c11.8-2.1-2.3-8.6-7-9.6a39 39 0 0 1-20.3-14.5c-6.7-7.4-7-17.6-10-26.5-2.4-8.3-2.2-17.2-5.5-25.3-2.5-3.4-6.3 4.6-9 2z"
-		/>
-		<text
-			xml:space="preserve"
-			font-family="'Marker Felt'"
-			font-size="18.7"
-			font-weight="400"
-			letter-spacing="0"
-			style="line-height:.0580608px;-inkscape-font-specification:&quot;Marker Felt&quot;"
-			word-spacing="0"
-			><textPath xlink:href="#a"
-				><tspan dx="0" style="-inkscape-font-specification:&quot;Marker Felt&quot;">ABOUT ME</tspan
-				></textPath
-			></text
-		>
-	</g>
-	<g class="glass" id="rightG">
-		<path
-			fill="#e5efff"
-			d="M313.4 298.9c0-.2-1.2-.2-1.9-.4a43 43 0 0 1-14.3-4 58 58 0 0 1-15.8-16.2c-6.1-9-8-20.3-5.2-30.8 4.6-13.5 21-26 41.3-30.5 11.4-2.4 23.3-2.1 34.6.8 10.4 2.7 15.5 12 15.1 24.3-.2 5.4-2.1 10.5-4.3 17-2 6-4.6 11.9-7.7 17.5a44.5 44.5 0 0 1-37.3 22.3z"
-		/>
-		<path
-			fill="#c6deff"
-			d="M280.3 243.5c3.6 12.9 6.6 27.1 16.8 36.8a26.2 26.2 0 0 0 19.4 9.5c8.3.9 17.6 1.8 24.6-3.8 3.2-1.1 11.9-8.1 12.6-4.3-1.2 4.6-5 6.4-8.7 8.2-4.4 2.2-8.8 4.8-13.2 6.8-6.7.2-13.4.9-20 .6L288 286c-1.8-6-4.5-11.8-6-17.8z"
-		/>
-		<path
-			id="b"
-			class="invis"
-			fill="none"
-			stroke="none"
-			stroke-linecap="butt"
-			stroke-linejoin="miter"
-			stroke-opacity="1"
-			stroke-width="1.3"
-			d="M277.9 264.6s15 1 44 .4c37-.8 44.4-4 44.4-4"
-			display="inline"
-		/>
-		<text
-			xml:space="preserve"
-			font-family="'Marker Felt'"
-			font-size="18.7"
-			font-weight="400"
-			style="line-height:.0580608px;-inkscape-font-specification:&quot;Marker Felt&quot;"
-			><textPath xlink:href="#b">MY WORK</textPath></text
-		>
+	<g role="navigation">
+		<a href="/about" class="glass" id="leftG">
+			<path
+				fill="#e5efff"
+				d="M197.4 299c-5.2-.4-11-3-16.8-7.2a71.7 71.7 0 0 1-22.6-38.9 83.8 83.8 0 0 1-3-22.1c.2-2.7.5-4 1.4-6 2.2-4.4 6.8-7 16-9.1 4.7-1.2 9.6-1.9 14.5-2 14.8-.6 31 1.8 37.5 5.7a45.4 45.4 0 0 1 21.4 38.8c0 7.7-1.6 14-5.2 19.4a53 53 0 0 1-43.2 21.5z"
+			/>
+			<path
+				id="a"
+				class="invis"
+				fill="none"
+				stroke="none"
+				stroke-linecap="butt"
+				stroke-linejoin="miter"
+				stroke-opacity="1"
+				stroke-width="1.3"
+				d="M161.3 258.6s16.3 4.8 44.5 5.5c29.7.8 41.7-.5 41.7-.5"
+			/>
+			<path
+				fill="#c6deff"
+				d="m157.8 224.8 4.5 36.1c6 8.4 12.1 17 18.4 25.3 3.6 2.5 6.8 5.9 10.8 7.8l18.1 4.6c11.8-2.1-2.3-8.6-7-9.6a39 39 0 0 1-20.3-14.5c-6.7-7.4-7-17.6-10-26.5-2.4-8.3-2.2-17.2-5.5-25.3-2.5-3.4-6.3 4.6-9 2z"
+			/>
+			<text
+				xml:space="preserve"
+				font-family="'Marker Felt'"
+				font-size="18.7"
+				font-weight="400"
+				letter-spacing="0"
+				style="line-height:.0580608px;-inkscape-font-specification:&quot;Marker Felt&quot;"
+				word-spacing="0"
+				><textPath xlink:href="#a"
+					><tspan dx="0" style="-inkscape-font-specification:&quot;Marker Felt&quot;"
+						>ABOUT ME</tspan
+					></textPath
+				></text
+			>
+		</a>
+		<a href="/projects" class="glass" id="rightG">
+			<path
+				fill="#e5efff"
+				d="M313.4 298.9c0-.2-1.2-.2-1.9-.4a43 43 0 0 1-14.3-4 58 58 0 0 1-15.8-16.2c-6.1-9-8-20.3-5.2-30.8 4.6-13.5 21-26 41.3-30.5 11.4-2.4 23.3-2.1 34.6.8 10.4 2.7 15.5 12 15.1 24.3-.2 5.4-2.1 10.5-4.3 17-2 6-4.6 11.9-7.7 17.5a44.5 44.5 0 0 1-37.3 22.3z"
+			/>
+			<path
+				fill="#c6deff"
+				d="M280.3 243.5c3.6 12.9 6.6 27.1 16.8 36.8a26.2 26.2 0 0 0 19.4 9.5c8.3.9 17.6 1.8 24.6-3.8 3.2-1.1 11.9-8.1 12.6-4.3-1.2 4.6-5 6.4-8.7 8.2-4.4 2.2-8.8 4.8-13.2 6.8-6.7.2-13.4.9-20 .6L288 286c-1.8-6-4.5-11.8-6-17.8z"
+			/>
+			<path
+				id="b"
+				class="invis"
+				fill="none"
+				stroke="none"
+				stroke-linecap="butt"
+				stroke-linejoin="miter"
+				stroke-opacity="1"
+				stroke-width="1.3"
+				d="M277.9 264.6s15 1 44 .4c37-.8 44.4-4 44.4-4"
+				display="inline"
+			/>
+			<text
+				xml:space="preserve"
+				font-family="'Marker Felt'"
+				font-size="18.7"
+				font-weight="400"
+				style="line-height:.0580608px;-inkscape-font-specification:&quot;Marker Felt&quot;"
+				><textPath xlink:href="#b">MY WORK</textPath></text
+			>
+		</a>
 	</g>
 	<path
 		fill="#ff0c72"
@@ -341,7 +345,7 @@
 				}
 
 				text {
-					transform: scale(1.005) translate(0px, 1px);
+					transform: scale(1.005) translate(-1px, -2px);
 				}
 			}
 		}

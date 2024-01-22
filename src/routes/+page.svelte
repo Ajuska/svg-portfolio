@@ -9,6 +9,11 @@
 <style lang="scss">
 	:root {
 		background-color: black;
+		color: white;
+	}
+
+	:global(a) {
+		color: grey;
 	}
 
 	:global(body) {
