@@ -1,6 +1,17 @@
 :root {
 	background-color: black;
 	color: white;
+	font-family: Avenir, System-ui, Arial;
+}
+
+@font-face {
+	font-family: 'Avenir';
+	src: url('./avenir_light.woff');
+}
+
+h1 {
+	font-family: Marker Felt;
+	text-transform: uppercase;
 }
 
 a {
