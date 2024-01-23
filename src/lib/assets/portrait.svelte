@@ -4,6 +4,7 @@
 	xml:space="preserve"
 	viewBox="0 0 530.5 563.1"
 	aria-hidden="true"
+	class={$$props.class}
 >
 	<path fill="#31c6ff" d="M0 0h530.7v563.2H0Z" />
 	<g fill="#70d0ff">
@@ -321,7 +322,9 @@
 <style lang="scss">
 	svg {
 		width: 90%;
-		border-radius: 70% 30% / 25% 75%;
+		/* border-radius: 70% 30% / 25% 75%; */
+		clip-path: polygon(0% 13%, 100% 0%, 100% 100%, 0% 87%);
+
 		@include gt-sm {
 			width: 60%;
 		}
@@ -349,5 +352,28 @@
 				}
 			}
 		}
+	}
+
+	.face-projects {
+		/* transition: all 1s ease; */
+		transition:
+			clip-path 0.2s ease-in,
+			transform-origin 3s ease-out,
+			transform 5s ease,
+			opacity 2s ease-out;
+		/* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
+		/* clip-path: circle(20%); */
+		/* clip-path: rect(0% 100% 100% 0%); */
+	}
+
+	.face-projects.ready {
+		transform: scale(5);
+		/* clip-path: circle(50%); */
+		/* clip-path: polygon(50% 38%, 75% 34%, 75% 56%, 50% 54%); */
+		/* clip-path: polygon(0 19%, 100% 0, 100% 100%, 0 82%); */
+		/* clip-path: rect(37% 72% 54% 49%); */
+		/* transform-origin: 60% 45%; */
+		transform-origin: 55% 47%;
+		/* opacity: 0; */
 	}
 </style>
