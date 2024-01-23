@@ -320,14 +320,7 @@
 
 <style lang="scss">
 	svg {
-		width: 90%;
 		border-radius: 70% 30% / 25% 75%;
-		@include gt-sm {
-			width: 60%;
-		}
-		@include gt-md {
-			width: 40%;
-		}
 
 		.glass {
 			cursor: pointer;

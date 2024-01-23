@@ -15,7 +15,13 @@ h1 {
 }
 
 a {
-	color: grey;
+	color: #da0060;
+	text-decoration: none;
+	transition: 0.3s all ease;
+}
+
+a:hover {
+	color: #ff64a8;
 }
 
 body {
