@@ -1,10 +1,10 @@
-<h1>About me</h1>
+<h1>Hi, I'm Andrea Vicarova</h1>
 <p>
-	Hi, I'm Andrea, and I have a confession to make. Ever since my childhood, I have been captivated
-	by art in every form: paper, clay, plastic, clothes, sound, and eventually, bits. I would never
-	have thought that computers could make those beeping sounds when dialing for an internet
-	connection. Are they alive? Can they hear us? Maybe not, but fast forward, they can definitely fix
-	any issues in this message for me.
+	..and I have a confession to make. Ever since my childhood, I have been captivated by art in every
+	form: paper, clay, plastic, clothes, sound, and eventually, bits. I would never have thought that
+	computers could make those beeping sounds when dialing for an internet connection. Are they alive?
+	Can they hear us? Maybe not, but fast forward, they can definitely fix any issues in this message
+	for me.
 </p>
 <p>
 	I'm thrilled that I can speak several human languages, but my brain has also picked up the grammar
