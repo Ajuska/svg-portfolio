@@ -1,5 +1,5 @@
 <script>
-	import Portrait from '$lib/assets/portrait.svelte';
+	import Portrait from '$lib/components/portrait.svelte';
 </script>
 
 <Portrait />

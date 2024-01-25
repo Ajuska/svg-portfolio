@@ -1,9 +1,9 @@
 <script>
+	import Header from '$lib/components/header.svelte';
 	export let data;
 </script>
 
-<h1>Projects</h1>
-
+<Header title="Projects" />
 <h2>Games</h2>
 <ul>
 	{#each data.games as { slug, title }}
@@ -17,5 +17,3 @@
 		<li><a href="/projects/{slug}">{title}</a></li>
 	{/each}
 </ul>
-
-<a href="/">Go back</a>

@@ -1,4 +1,8 @@
-<h1>Hi, I'm Andrea Vicarova</h1>
+<script>
+	import Header from '$lib/components/header.svelte';
+</script>
+
+<Header title="Hi, I'm Andrea Vicarova"></Header>
 <p>
 	..and I have a confession to make. Ever since my childhood, I have been captivated by art in every
 	form: paper, clay, plastic, clothes, sound, and eventually, bits. I would never have thought that
@@ -14,4 +18,3 @@
 	or game development.
 </p>
 <p>Feel free to get in touch with me via LinkedIn or email!</p>
-<a href="/">Go back</a>
