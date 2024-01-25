@@ -8,8 +8,8 @@ export function load() {
 				slug: project.slug,
 				title: project.title
 			})),
-		webs: projects
-			.filter((project: Project) => project.type === 'web')
+		websites: projects
+			.filter((project: Project) => project.type === 'website')
 			.map((project: Project) => ({
 				slug: project.slug,
 				title: project.title
