@@ -67,4 +67,5 @@ export const projects = [
 	}
 ] as const;
 
-export type ProjectSlug = (typeof projects)[number]['slug'];
+export type Project = (typeof projects)[number];
+export type ProjectSlug = Project['slug'];
