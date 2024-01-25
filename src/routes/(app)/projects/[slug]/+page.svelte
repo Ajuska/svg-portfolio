@@ -8,7 +8,7 @@
 	export let data;
 </script>
 
-<Header title={data.project.title}></Header>
+<Header title={data.project.title} previous="/projects"></Header>
 <ul>
 	{#each data.project.tech as tech}
 		<li>{tech}</li>

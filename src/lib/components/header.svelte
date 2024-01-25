@@ -1,10 +1,11 @@
 <script lang="ts">
 	export let title: string;
+	export let previous: string = '/';
 </script>
 
 <div class="header-container">
 	<h1>{title}</h1>
-	<a href="/" class="close" aria-label="Go Back">&times;</a>
+	<a href={previous} class="close" aria-label="Go Back">&times;</a>
 </div>
 
 <style lang="scss">
