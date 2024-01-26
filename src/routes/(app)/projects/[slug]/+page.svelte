@@ -1,9 +1,6 @@
 <script lang="ts">
-	import { type ProjectSlug } from '../data';
-	import eatGun from '$lib/assets/eat-gun.png?enhanced';
 	import Header from '$lib/components/header.svelte';
-
-	const imgs: { [key in ProjectSlug]?: string } = { 'eat-gun': eatGun };
+	import Image from '$lib/components/image.svelte';
 
 	export let data;
 </script>
@@ -24,7 +21,7 @@
 		<li><a {href} target="_blank">{name}</a></li>
 	{/each}
 </ul>
-{#if imgs[data.project.slug]}
-	<enhanced:img src={imgs[data.project.slug]} alt={data.project.title} />
-{/if}
+
+<Image key={data.project.slug} label={data.project.title} />
+
 <div>{data.project.description}</div>
