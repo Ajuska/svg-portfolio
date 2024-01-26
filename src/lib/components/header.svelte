@@ -8,7 +8,7 @@
 		<h1>{title}</h1>
 		<slot />
 	</div>
-	<a href={previous} class="close" aria-label="Go Back">&times;</a>
+	<a href={previous} class="close" aria-label="Go Back" rel="noopener noreferrer">&times;</a>
 </div>
 
 <style lang="scss">

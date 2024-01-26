@@ -9,7 +9,7 @@
 
 <Header title={data.project.title} previous="/projects">
 	{#each data.project.links as { name, href }}
-		<a {href} class="icon" target="_blank" aria-label={name}>
+		<a {href} class="icon" target="_blank" aria-label={name} rel="noopener noreferrer">
 			{#if name === 'Code'}<Github />{:else}<Chain />{/if}
 		</a>
 	{/each}

@@ -20,12 +20,13 @@
 				aria-hidden="true"
 				id={section}
 			></div>
-			<h2 id="section">{section}</h2>
-			<ul aria-labelledby="section">
+			<h2 class="section-name">{section}</h2>
+			<ul aria-label={section}>
 				{#each data[section] as { slug, title }}
 					<li aria-label={title} class={slug}>
 						<a
 							href="/projects/{slug}"
+							rel="noopener noreferrer"
 							on:mouseenter={() => {
 								section === 'games' ? (bgImgG = slug) : (bgImgW = slug);
 							}}
@@ -92,7 +93,7 @@
 			transition: background 300ms ease-in-out 200ms;
 		}
 	}
-	#section {
+	.section-name {
 		text-transform: capitalize;
 		position: relative;
 	}
