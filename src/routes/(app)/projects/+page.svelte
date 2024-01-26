@@ -42,12 +42,19 @@
 	.wrapper {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-gap: 2rem;
+		grid-gap: 1rem;
 
 		@include xs {
 			grid-template-columns: 1fr;
 		}
 	}
+
+	h2 {
+		@include xs {
+			font-size: 1.3rem;
+		}
+	}
+
 	.project-card {
 		padding: 1rem;
 		background-color: $white;

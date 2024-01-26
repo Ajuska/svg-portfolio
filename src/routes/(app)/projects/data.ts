@@ -38,7 +38,7 @@ export const projects = [
 		tech: ['Unity', 'C#'],
 		role: ['Programming', '3D Art', 'Level Design'],
 		links: [
-			{ name: 'Play the game', href: 'https://rangwath.itch.io/tidy-teddy-messy-teddy' },
+			{ name: 'Play the game', href: 'https://whoooly.itch.io/project-boost' },
 			{ name: 'Code', href: 'https://github.com/Ajuska/Project-Boost' }
 		],
 		description:

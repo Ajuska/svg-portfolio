@@ -31,6 +31,9 @@
 	:global(h1) {
 		font-family: Marker Felt;
 		text-transform: uppercase;
+		@include xs {
+			font-size: 1.7rem;
+		}
 	}
 
 	:global(a) {
@@ -47,6 +50,10 @@
 		margin: 0;
 		height: 100vh;
 		width: 100vw;
+
+		@include xs {
+			margin-top: 3rem;
+		}
 	}
 
 	@font-face {

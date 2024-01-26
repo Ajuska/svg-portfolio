@@ -5,10 +5,10 @@
 <style lang="scss">
 	.main {
 		background: $blue;
-		color: $black;
+		color: $black-light;
 		border-radius: 10% 5%;
 		padding: 1rem;
-		border: 0.5rem solid $white;
+		border: 0.5rem solid $blue-pale-light;
 
 		@include gt-sm {
 			border-radius: 70% 30% / 25% 75%;
