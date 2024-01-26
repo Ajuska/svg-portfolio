@@ -16,12 +16,13 @@
 	}
 
 	.close {
-		color: #404663;
+		color: $black-light;
 		font-size: 2rem;
 		padding: 0rem 0.9rem;
 		cursor: pointer;
 		transition: all 0.3s ease-out;
 		-webkit-tap-highlight-color: transparent;
+		font-family: none;
 
 		&:hover {
 			transform: rotate(90deg);

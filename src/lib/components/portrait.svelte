@@ -334,7 +334,7 @@
 			}
 			&:hover {
 				path:not(.invis) {
-					fill: #c6deff;
+					fill: $blue-light;
 				}
 
 				text {

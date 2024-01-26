@@ -10,7 +10,10 @@ export default defineConfig({
 	css: {
 		preprocessorOptions: {
 			scss: {
-				additionalData: `@use '$lib/style/media-queries' as *;`
+				additionalData: `
+				@use '$lib/style/media-queries' as *;
+				@use '$lib/style/colors' as *;
+				`
 			}
 		}
 	}

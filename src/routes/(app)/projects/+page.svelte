@@ -50,7 +50,7 @@
 	}
 	.project-card {
 		padding: 1rem;
-		background-color: white;
+		background-color: $white;
 		position: relative;
 		border-radius: 1rem;
 
@@ -62,10 +62,10 @@
 			li {
 				padding: 0.5rem 0;
 				a:hover {
-					color: #ff0c72;
+					color: $pink;
 					padding: 0.6rem;
 					margin-left: 0.2rem;
-					background-color: black;
+					background-color: $black-light;
 				}
 			}
 		}
@@ -81,7 +81,7 @@
 			background-position: center center;
 			opacity: 0.3;
 			border-radius: 1rem;
-			border: 0.2rem solid white;
+			border: 0.2rem solid $white;
 			transition: background 300ms ease-in-out 200ms;
 		}
 	}
