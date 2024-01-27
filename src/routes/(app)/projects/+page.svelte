@@ -23,7 +23,7 @@
 			<h2 class="section-name">{section}</h2>
 			<ul aria-label={section}>
 				{#each data[section] as { slug, title }}
-					<li aria-label={title} class={slug}>
+					<li class={slug}>
 						<a
 							href="/projects/{slug}"
 							rel="noopener noreferrer"

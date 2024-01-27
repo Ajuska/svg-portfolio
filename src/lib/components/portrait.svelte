@@ -3,7 +3,7 @@
 	xmlns:xlink="http://www.w3.org/1999/xlink"
 	xml:space="preserve"
 	viewBox="0 0 530.5 563.1"
-	aria-hidden="true"
+	role="presentation"
 >
 	<path fill="#31c6ff" d="M0 0h530.7v563.2H0Z" />
 	<g fill="#70d0ff">
@@ -116,7 +116,7 @@
 		filter="url(#filter6956)"
 	/>
 	<path fill="#fff" d="M278.3 349.6c1 .6-4.7-4.9-9.4-4-4.6 1-1.4 1 1 1.6 2.6.9 3.1 0 8.4 2.4z" />
-	<g role="navigation">
+	<g role="navigation" aria-label="Sections">
 		<a href="/about" class="glass" id="leftG" rel="noopener noreferrer">
 			<path
 				fill="#e5efff"
@@ -268,7 +268,7 @@
 		href="https://github.com/ajuska"
 		class="necklase-link"
 		target="_blank"
-		aria-label="Github (opens in new window)"
+		aria-label="Github (opens in a new tab)"
 		rel="noopener noreferrer"
 	>
 		<path
@@ -299,7 +299,7 @@
 		href="https://artstation.com/andreawitcher"
 		class="necklase-link"
 		target="_blank"
-		aria-label="ArtStation (opens in new window)"
+		aria-label="ArtStation (opens in a new tab)"
 		rel="noopener noreferrer"
 	>
 		<path
@@ -330,7 +330,7 @@
 		href="https://linkedin.com/in/andrea-vicarova"
 		class="necklase-link"
 		target="_blank"
-		aria-label="LinkedIn (opens in new window)"
+		aria-label="LinkedIn (opens in a new tab)"
 		rel="noopener noreferrer"
 	>
 		<path
