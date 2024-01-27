@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import Transition from '$lib/components/transition.svelte';
+	import Portrait from '$lib/components/portrait.svelte';
 
 	let isPageLoaded = false;
 
@@ -19,6 +20,7 @@
 	<div class="page">
 		<div class="centered">
 			<slot />
+			<Portrait />
 		</div>
 	</div>
 </Transition>

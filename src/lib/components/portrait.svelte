@@ -1,9 +1,58 @@
+<script lang="ts">
+	import { page } from '$app/stores';
+
+	import { fade, fly } from 'svelte/transition';
+	import { elasticOut, cubicOut } from 'svelte/easing';
+
+	$: isMain = $page.url.pathname === '/';
+	$: isSub = ['/about', '/projects'].includes($page.url.pathname);
+	$: isInvis = isMain ? '' : 'invisible';
+	$: console.log($page.url.pathname);
+
+	function animate(node) {
+		let animation = {};
+		if (isMain) {
+			animation = {
+				duration: 1000,
+				css: (t) => {
+					const eased = elasticOut(t);
+
+					return `
+					transform: scale(${eased * t});
+
+					opacity: ${t}`;
+				}
+			};
+		} else if (isSub) {
+			animation = {
+				duration: 1000,
+				css: (t, u) => {
+					const eased = cubicOut(t);
+
+					return `
+
+					transform: scale(${eased * 3});
+					transform-origin: 55% 47%;
+
+					opacity: ${u}
+
+					`;
+				}
+			};
+		}
+
+		return animation;
+	}
+</script>
+
 <svg
 	xmlns="http://www.w3.org/2000/svg"
 	xmlns:xlink="http://www.w3.org/1999/xlink"
 	xml:space="preserve"
 	viewBox="0 0 530.5 563.1"
 	aria-hidden="true"
+	in:animate
+	class={isInvis}
 >
 	<path fill="#31c6ff" d="M0 0h530.7v563.2H0Z" />
 	<g fill="#70d0ff">
@@ -407,5 +456,12 @@
 		50% {
 			transform: scale(0.999, 1.001);
 		}
+	}
+
+	.invisible {
+		opacity: 0;
+		margin-top: -80%;
+		z-index: -1;
+		position: relative;
 	}
 </style>

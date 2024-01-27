@@ -4,7 +4,7 @@
 </script>
 
 {#key path}
-	<div class="transition" in:fade={{ duration: 300 }}>
+	<div class="transition" in:fade={{ duration: 500 }}>
 		<slot />
 	</div>
 {/key}
