@@ -1,8 +1,11 @@
 <script lang="ts">
+	import { page } from '$app/stores';
+	import Transition from '$lib/components/transition.svelte';
+
 	let isPageLoaded = false;
 
 	function pageLoaded(_: HTMLElement) {
-		setTimeout(() => (isPageLoaded = true), 1000);
+		setTimeout(() => (isPageLoaded = true), 500);
 	}
 </script>
 
@@ -12,11 +15,13 @@
 	</div>
 {/if}
 
-<div class="page">
-	<div class="centered">
-		<slot />
+<Transition path={$page.url.pathname}>
+	<div class="page">
+		<div class="centered">
+			<slot />
+		</div>
 	</div>
-</div>
+</Transition>
 
 <style lang="scss">
 	.loader {
