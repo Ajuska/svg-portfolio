@@ -1,3 +1,17 @@
+<script lang="ts">
+	let isPageLoaded = false;
+
+	function pageLoaded(_: HTMLElement) {
+		setTimeout(() => (isPageLoaded = true), 1000);
+	}
+</script>
+
+{#if !isPageLoaded}
+	<div class="loader" use:pageLoaded>
+		<img src="/src/lib/icons/loading.svg" alt="" />
+	</div>
+{/if}
+
 <div class="page">
 	<div class="centered">
 		<slot />
@@ -5,6 +19,18 @@
 </div>
 
 <style lang="scss">
+	.loader {
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		display: grid;
+		place-items: center;
+		z-index: 99;
+		background-color: $black;
+	}
+
 	.page {
 		display: flex;
 		align-items: center;
@@ -52,7 +78,7 @@
 		width: 100vw;
 
 		@include xs {
-			margin-top: 3rem;
+			margin-top: 2.5rem;
 		}
 	}
 
