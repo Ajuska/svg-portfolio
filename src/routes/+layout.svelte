@@ -56,7 +56,7 @@
 	:root {
 		background-color: $black;
 		color: $white;
-		font-family: 'Roboto Consensed', System-ui, Arial;
+		font-family: 'Roboto Condensed', System-ui, Arial;
 	}
 
 	:global(h1) {
@@ -88,7 +88,8 @@
 	}
 
 	@font-face {
-		font-family: 'Roboto Consensed';
-		src: url('./rbt.ttf');
+		font-family: 'Roboto Condensed';
+		src: url('/src/lib/style/fonts/rbt.woff'), url('/src/lib/style/fonts/rbt.woff2'),
+			url('/src/lib/style/fonts/rbt.ttf');
 	}
 </style>
