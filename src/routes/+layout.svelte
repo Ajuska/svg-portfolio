@@ -5,7 +5,7 @@
 	let isPageLoaded = false;
 
 	function pageLoaded(_: HTMLElement) {
-		setTimeout(() => (isPageLoaded = true), 500);
+		isPageLoaded = true;
 	}
 </script>
 
