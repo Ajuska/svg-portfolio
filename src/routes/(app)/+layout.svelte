@@ -9,6 +9,7 @@
 		border-radius: 10% 5%;
 		padding: 1rem;
 		border: 0.5rem solid $blue-pale-light;
+		min-width: 440px;
 
 		@include gt-sm {
 			border-radius: 70% 30% / 25% 75%;
