@@ -4,7 +4,7 @@
 
 	let isPageLoaded = false;
 
-	function pageLoaded(_: HTMLElement) {
+	function pageLoaded(_: HTMLDivElement) {
 		isPageLoaded = true;
 	}
 </script>
