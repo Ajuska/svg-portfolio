@@ -49,7 +49,7 @@
 			width: 60%;
 		}
 		@include gt-md {
-			width: 45%;
+			width: 40%;
 		}
 	}
 
