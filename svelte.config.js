@@ -20,7 +20,8 @@ const config = {
 		},
 		alias: {
 			$routes: './src/routes',
-			'$routes/*': './src/routes/*'
+			'$routes/*': './src/routes/*',
+			'$lib/*': './src/lib/*'
 		}
 	}
 };
