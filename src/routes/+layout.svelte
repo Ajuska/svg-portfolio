@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import Transition from '$lib/components/transition.svelte';
+	import Loading from '$lib/icons/loading.svg';
 
 	let isPageLoaded = false;
 
@@ -11,7 +12,7 @@
 
 {#if !isPageLoaded}
 	<div class="loader" use:pageLoaded>
-		<img src="/src/lib/icons/loading.svg" alt="" />
+		<img src={Loading} alt="Loading" />
 	</div>
 {/if}
 

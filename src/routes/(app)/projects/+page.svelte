@@ -5,6 +5,9 @@
 	let bgImgG = 'def';
 	let bgImgW = 'def';
 	const sections: (keyof typeof data)[] = ['websites', 'games'];
+
+	$: getUrl = (section: keyof typeof data) =>
+		new URL(`/src/lib/assets/${section === 'games' ? bgImgG : bgImgW}.png`, import.meta.url).href;
 </script>
 
 <Header title="Projects" />
@@ -14,9 +17,7 @@
 		<div class="project-card">
 			<div
 				class="backdrop"
-				style="background-image: url('/src/lib/assets/{section === 'games'
-					? bgImgG
-					: bgImgW}.png');"
+				style="background-image: url('{getUrl(section)}');"
 				aria-hidden="true"
 				id={section}
 			></div>
