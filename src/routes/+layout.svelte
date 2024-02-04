@@ -35,6 +35,13 @@
 		place-items: center;
 		z-index: 99;
 		background-color: $black;
+
+		svg {
+			margin: auto;
+			background: transparent;
+			display: block;
+			shape-rendering: auto;
+		}
 	}
 
 	.page {
