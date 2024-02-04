@@ -12,9 +12,9 @@
 <p>
 	I'm thrilled that I can speak several human languages, but my brain has also picked up the grammar
 	for those metal machines, allowing me to understand at least a fraction of what is there to grasp.
-	So perhaps it’s already clear to you that I'm a huge sci-fi fan with a vivid imagination.
-	Currently, I channel this creativity into crafting pixel-perfect, accessible products for the web
-	or game development.
+	Perhaps it’s already clear to you that I'm a huge sci-fi fan with a vivid imagination. Currently,
+	I channel this creativity into crafting pixel-perfect, accessible products for the web or game
+	development.
 </p>
 <p>
 	Feel free to get in touch with me via
