@@ -34,8 +34,5 @@
 		"vite": "^5.0.3",
 		"vitest": "^1.0.0"
 	},
-	"type": "module",
-	"dependencies": {
-		"@sveltejs/enhanced-img": "^0.1.8"
-	}
+	"type": "module"
 }

@@ -1,11 +1,11 @@
 <script lang="ts">
 	import { type ProjectSlug } from '$routes/(app)/projects/data';
-	import boostShip from '$lib/assets/boost-ship.png?enhanced';
-	import eatGun from '$lib/assets/eat-gun.png?enhanced';
-	import elektroCz from '$lib/assets/elektro-cz.png?enhanced';
-	import needForJamf from '$lib/assets/need-for-jamf.png?enhanced';
-	import teddy from '$lib/assets/teddy.png?enhanced';
-	import wedding from '$lib/assets/wedding.png?enhanced';
+	import boostShip from '$lib/assets/boost-ship.png';
+	import eatGun from '$lib/assets/eat-gun.png';
+	import elektroCz from '$lib/assets/elektro-cz.png';
+	import needForJamf from '$lib/assets/need-for-jamf.png';
+	import teddy from '$lib/assets/teddy.png';
+	import wedding from '$lib/assets/wedding.png';
 
 	const imgs: { [key in ProjectSlug]?: string } = {
 		'boost-ship': boostShip,
@@ -21,7 +21,7 @@
 </script>
 
 {#if imgs[key]}
-	<enhanced:img src={imgs[key]} alt={label} class="image" />
+	<img src={imgs[key]} alt={label} class="image" />
 {/if}
 
 <style>
