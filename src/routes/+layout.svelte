@@ -36,7 +36,7 @@
 		z-index: 99;
 		background-color: $black;
 
-		svg {
+		img {
 			margin: auto;
 			background: transparent;
 			display: block;
@@ -57,7 +57,7 @@
 			width: 60%;
 		}
 		@include gt-md {
-			width: 40%;
+			width: 48%;
 		}
 	}
 

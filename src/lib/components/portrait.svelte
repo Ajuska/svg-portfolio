@@ -245,7 +245,7 @@
 	/>
 	<a
 		href="https://github.com/ajuska"
-		class="necklase-link"
+		class="necklase-link left"
 		target="_blank"
 		aria-label="Github (opens in a new tab)"
 		rel="noopener noreferrer"
@@ -276,7 +276,7 @@
 	>
 	<a
 		href="https://artstation.com/andreawitcher"
-		class="necklase-link"
+		class="necklase-link right"
 		target="_blank"
 		aria-label="ArtStation (opens in a new tab)"
 		rel="noopener noreferrer"
@@ -307,7 +307,7 @@
 	</a>
 	<a
 		href="https://linkedin.com/in/andrea-vicarova"
-		class="necklase-link"
+		class="necklase-link middle"
 		target="_blank"
 		aria-label="LinkedIn (opens in a new tab)"
 		rel="noopener noreferrer"
@@ -349,6 +349,7 @@
 
 		.glass {
 			cursor: pointer;
+			animation: gelatine 0.5s infinite;
 
 			.font {
 				transition: all 0.2s ease-in;
@@ -369,9 +370,19 @@
 		}
 
 		.necklase-link {
-			&:hover {
-				animation: gelatine 0.5s infinite;
+			&.middle {
+				animation: gelatine 0.4s infinite;
+			}
 
+			&.left {
+				animation: gelatine 0.3s infinite;
+			}
+
+			&.right {
+				animation: gelatine 0.5s infinite;
+			}
+
+			&:hover {
 				ellipse,
 				path:not(.logo) {
 					fill: $blue-pale;
@@ -386,7 +397,7 @@
 			transform: scale(1, 1);
 		}
 		50% {
-			transform: scale(0.999, 1.001);
+			transform: scale(0.9995, 1.0005);
 		}
 	}
 </style>
