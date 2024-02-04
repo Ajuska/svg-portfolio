@@ -56,8 +56,7 @@
 	.icon {
 		width: 2rem;
 		transition: 0.2s all ease-in;
-		padding-left: 0.9rem;
-		margin: 0.9rem 0;
+		padding: 0.3rem;
 		fill: $pink-dark;
 		&:hover {
 			fill: $pink-light;

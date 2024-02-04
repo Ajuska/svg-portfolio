@@ -26,13 +26,14 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		column-gap: 0.8rem;
 	}
 
 	.close {
 		color: $black-light;
 		font-size: 2rem;
-		padding: 0rem 0.9rem;
-		margin-bottom: 0.4rem;
+		padding: 0rem 0.6rem 0.4rem 0.6rem;
+
 		cursor: pointer;
 		transition: all 0.3s ease-out;
 		-webkit-tap-highlight-color: transparent;
