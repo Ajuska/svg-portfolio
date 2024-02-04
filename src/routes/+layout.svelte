@@ -41,7 +41,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		height: 100%;
+		min-height: 100%;
 	}
 	.centered {
 		width: 90%;
@@ -82,10 +82,6 @@
 		margin: 0;
 		height: 100vh;
 		width: 100vw;
-
-		@include xs {
-			margin-top: 2.5rem;
-		}
 	}
 
 	@font-face {
