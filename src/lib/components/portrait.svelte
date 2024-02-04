@@ -135,20 +135,9 @@
 				fill="#c6deff"
 				d="m157.8 224.8 4.5 36.1c6 8.4 12.1 17 18.4 25.3 3.6 2.5 6.8 5.9 10.8 7.8l18.1 4.6c11.8-2.1-2.3-8.6-7-9.6a39 39 0 0 1-20.3-14.5c-6.7-7.4-7-17.6-10-26.5-2.4-8.3-2.2-17.2-5.5-25.3-2.5-3.4-6.3 4.6-9 2z"
 			/>
-			<text
-				xml:space="preserve"
-				font-family="'Marker Felt'"
-				font-size="18.7"
-				font-weight="400"
-				letter-spacing="0"
-				style="line-height:.0580608px;-inkscape-font-specification:&quot;Marker Felt&quot;"
-				word-spacing="0"
-				><textPath xlink:href="#a"
-					><tspan dx="0" style="-inkscape-font-specification:&quot;Marker Felt&quot;"
-						>ABOUT ME</tspan
-					></textPath
-				></text
-			>
+			<text class="font">
+				<textPath xlink:href="#a"><tspan>ABOUT ME</tspan></textPath>
+			</text>
 		</a>
 		<a href="/projects" class="glass" id="rightG" rel="noopener noreferrer">
 			<path
@@ -171,14 +160,7 @@
 				d="M277.9 264.6s15 1 44 .4c37-.8 44.4-4 44.4-4"
 				display="inline"
 			/>
-			<text
-				xml:space="preserve"
-				font-family="'Marker Felt'"
-				font-size="18.7"
-				font-weight="400"
-				style="line-height:.0580608px;-inkscape-font-specification:&quot;Marker Felt&quot;"
-				><textPath xlink:href="#b">MY WORK</textPath></text
-			>
+			<text class="font"><textPath xlink:href="#b">MY WORK</textPath></text>
 		</a>
 	</g>
 	<path
@@ -368,9 +350,11 @@
 		.glass {
 			cursor: pointer;
 
-			text {
+			.font {
 				transition: all 0.2s ease-in;
 				user-select: none;
+				font-family: Marker Felt;
+				font-size: 1.2rem;
 			}
 			&:hover {
 				ellipse,
@@ -378,7 +362,7 @@
 					fill: $blue-pale;
 				}
 
-				text {
+				.font {
 					transform: scale(1.005) translate(-1px, -2px);
 				}
 			}
