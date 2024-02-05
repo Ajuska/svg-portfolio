@@ -1,6 +1,11 @@
 <script lang="ts">
 	import Header from '$lib/components/header.svelte';
+	import { type ProjectSlug } from '$routes/(app)/projects/data';
+
 	export let data;
+
+	$: getUrl = (slug: ProjectSlug): string =>
+		new URL(`/src/lib/assets/${slug}.png`, import.meta.url).href;
 </script>
 
 <Header title="Projects" />
@@ -9,7 +14,7 @@
 	{#each data.projects as { slug, title, type }}
 		<div class="project-card">
 			<div class="image-container">
-				<img src="/src/lib/assets/{slug}.png" alt={slug} />
+				<img src={getUrl(slug)} alt={slug} />
 			</div>
 			<div>
 				<a href="/projects/{slug}" rel="noopener noreferrer">{title}</a>
@@ -51,12 +56,6 @@
 		}
 	}
 
-	h2 {
-		@include xs {
-			font-size: 1.3rem;
-		}
-	}
-
 	.project-card {
 		display: flex;
 		align-items: center;
@@ -69,9 +68,5 @@
 			font-size: 0.7rem;
 			margin: 0;
 		}
-	}
-	.section-name {
-		text-transform: capitalize;
-		position: relative;
 	}
 </style>
