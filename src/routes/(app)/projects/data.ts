@@ -1,5 +1,25 @@
 export const projects = [
 	{
+		slug: 'elektro-cz',
+		title: 'Elektro CZ',
+		tech: ['Javascript', 'Sketch'],
+		role: ['Programming', 'UI/UX Design', 'Content Creation', 'Translations'],
+		links: [{ name: 'Website', href: 'http://elektrocz.eu/en/' }],
+		description:
+			"This project spans through all web development phases, including consultation, design, and actual creation, with the exception of the deployment phase. The main goal was to craft a virtual business card with a touch of presentation. Additionally, it's available in three languages and features a user-friendly, mobile-responsive design, guaranteeing a delightful experience for all visitors.",
+		type: 'website'
+	},
+	{
+		slug: 'wedding',
+		title: 'Wedding',
+		tech: ['Javascript', 'Blender', 'Figma'],
+		role: ['Programming', 'UI/UX Design', 'Content Creation', 'Translations', 'Deployment'],
+		links: [{ name: 'Website', href: 'https://svatba.vicar.dev/' }],
+		description:
+			"Explore the anonymized version of our enchanting wedding website through the provided link. The page includes all necessary details for guests. Experience seamless transitions between light and dark modes, tailored to your device's system preference, along with language support. All 3D content is custom-made, and the page is mobile-friendly for easy access.",
+		type: 'website'
+	},
+	{
 		slug: 'eat-gun',
 		title: 'Eat Gun',
 		tech: ['Unity', 'Procreate'],
@@ -44,26 +64,6 @@ export const projects = [
 		description:
 			'My first simple 3D platformer game, experimenting with various game concepts such as movement, sound, animation, and level design.',
 		type: 'game'
-	},
-	{
-		slug: 'elektro-cz',
-		title: 'Web for Elektro CZ',
-		tech: ['Javascript', 'Sketch'],
-		role: ['Programming', 'UI/UX Design', 'Content Creation', 'Translations'],
-		links: [{ name: 'Website', href: 'http://elektrocz.eu/en/' }],
-		description:
-			"This project spans through all web development phases, including consultation, design, and actual creation, with the exception of the deployment phase. The main goal was to craft a virtual business card with a touch of presentation. Additionally, it's available in three languages and features a user-friendly, mobile-responsive design, guaranteeing a delightful experience for all visitors.",
-		type: 'website'
-	},
-	{
-		slug: 'wedding',
-		title: 'Wedding web',
-		tech: ['Javascript', 'Blender', 'Figma'],
-		role: ['Programming', 'UI/UX Design', 'Content Creation', 'Translations', 'Deployment'],
-		links: [{ name: 'Website', href: 'https://svatba.vicar.dev/' }],
-		description:
-			"Explore the anonymized version of our enchanting wedding website through the provided link. The page includes all necessary details for guests. Experience seamless transitions between light and dark modes, tailored to your device's system preference, along with language support. All 3D content is custom-made, and the page is mobile-friendly for easy access.",
-		type: 'website'
 	}
 ] as const;
 

@@ -40,9 +40,7 @@
 
 <style lang="scss">
 	.image-container {
-		max-height: 400px;
-		max-width: 500px;
-		animation: 1s fadeIn;
+		animation: 0.3s fadeIn;
 	}
 
 	@keyframes fadeIn {
@@ -80,12 +78,12 @@
 
 	.tag {
 		display: inline-block;
-		font-size: 0.7rem;
+		font-size: 0.8rem;
 		font-weight: 600;
 		text-transform: lowercase;
 		padding: 0.2rem 0.5rem 0.3rem;
 		margin: 0.25rem 0.1rem;
-		border-radius: 0.25rem;
+		border-radius: 0.2rem;
 
 		&.yellow-dark {
 			background: $yellow-dark;

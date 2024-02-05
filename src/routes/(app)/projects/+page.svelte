@@ -1,46 +1,46 @@
 <script lang="ts">
 	import Header from '$lib/components/header.svelte';
 	export let data;
-
-	let bgImgG = 'def';
-	let bgImgW = 'def';
-	const sections: (keyof typeof data)[] = ['websites', 'games'];
-
-	$: getUrl = (section: keyof typeof data) =>
-		new URL(`/src/lib/assets/${section === 'games' ? bgImgG : bgImgW}.png`, import.meta.url).href;
 </script>
 
 <Header title="Projects" />
 
 <div class="wrapper">
-	{#each sections as section}
+	{#each data.projects as { slug, title, type }}
 		<div class="project-card">
-			<div
-				class="backdrop"
-				style="background-image: url('{getUrl(section)}');"
-				aria-hidden="true"
-				id={section}
-			></div>
-			<h2 class="section-name">{section}</h2>
-			<ul aria-label={section}>
-				{#each data[section] as { slug, title }}
-					<li class={slug}>
-						<a
-							href="/projects/{slug}"
-							rel="noopener noreferrer"
-							on:mouseenter={() => {
-								section === 'games' ? (bgImgG = slug) : (bgImgW = slug);
-							}}
-							on:mouseleave={() => ((bgImgG = 'def'), (bgImgW = 'def'))}>{title}</a
-						>
-					</li>
-				{/each}
-			</ul>
+			<div class="image-container">
+				<img src="/src/lib/assets/{slug}.png" alt={slug} />
+			</div>
+			<div>
+				<a href="/projects/{slug}" rel="noopener noreferrer">{title}</a>
+				<p class="label">{type}</p>
+			</div>
 		</div>
 	{/each}
 </div>
 
 <style lang="scss">
+	.image-container {
+		position: relative;
+		display: flex;
+		flex-shrink: 0;
+		flex-wrap: wrap;
+		width: 3rem;
+		height: 3rem;
+		overflow: hidden;
+		margin-right: 1rem;
+	}
+	.image-container img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 50%;
+		filter: grayscale(100%) contrast(120%);
+	}
+
 	.wrapper {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -58,40 +58,16 @@
 	}
 
 	.project-card {
+		display: flex;
+		align-items: center;
+		background-color: $blue-pale-light;
+		border-radius: 0.2rem;
 		padding: 1rem;
-		background-color: $white;
-		position: relative;
-		border-radius: 1rem;
 
-		ul {
-			position: relative;
-			list-style: none;
-			padding: 0;
-
-			li {
-				padding: 0.5rem 0;
-				a:hover {
-					color: $pink;
-					padding: 0.6rem;
-					margin-left: 0.2rem;
-					background-color: $black-light;
-				}
-			}
-		}
-
-		.backdrop {
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			right: 0;
-			left: 0;
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-position: center center;
-			opacity: 0.3;
-			border-radius: 1rem;
-			border: 0.2rem solid $white;
-			transition: background 300ms ease-in-out 200ms;
+		.label {
+			text-transform: uppercase;
+			font-size: 0.7rem;
+			margin: 0;
 		}
 	}
 	.section-name {
