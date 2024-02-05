@@ -96,4 +96,11 @@
 		src: url('/src/lib/style/fonts/rbt.woff'), url('/src/lib/style/fonts/rbt.woff2'),
 			url('/src/lib/style/fonts/rbt.ttf');
 	}
+
+	// this font is by default only on iOS/macOS
+	@font-face {
+		font-family: 'Marker Felt';
+		src: url('/src/lib/style/fonts/mf.woff'), url('/src/lib/style/fonts/mf.woff2'),
+			url('/src/lib/style/fonts/mf.ttf');
+	}
 </style>
