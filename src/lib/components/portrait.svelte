@@ -354,7 +354,9 @@
 			.font {
 				transition: all 0.2s ease-in;
 				user-select: none;
-				font-family: Marker Felt;
+				font-family:
+					Marker Felt,
+					sans-serif;
 				font-size: 1.2rem;
 			}
 			&:hover {

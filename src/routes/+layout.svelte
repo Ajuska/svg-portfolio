@@ -68,7 +68,9 @@
 	}
 
 	:global(h1) {
-		font-family: Marker Felt;
+		font-family:
+			Marker Felt,
+			sans-serif;
 		text-transform: uppercase;
 		@include xs {
 			font-size: 1.7rem;
@@ -93,14 +95,18 @@
 
 	@font-face {
 		font-family: 'Roboto Condensed';
-		src: url('/src/lib/style/fonts/rbt.woff'), url('/src/lib/style/fonts/rbt.woff2'),
-			url('/src/lib/style/fonts/rbt.ttf');
+		src:
+			url('/src/lib/style/fonts/rbt.woff2') format('woff2'),
+			url('/src/lib/style/fonts/rbt.woff') format('woff'),
+			url('/src/lib/style/fonts/rbt.ttf') format('truetype');
 	}
 
 	// this font is by default only on iOS/macOS
 	@font-face {
 		font-family: 'Marker Felt';
-		src: url('/src/lib/style/fonts/mf.woff'), url('/src/lib/style/fonts/mf.woff2'),
-			url('/src/lib/style/fonts/mf.ttf');
+		src:
+			url('/src/lib/style/fonts/mf.woff2') format('woff2'),
+			url('/src/lib/style/fonts/mf.woff') format('woff'),
+			url('/src/lib/style/fonts/mf.ttf') format('truetype');
 	}
 </style>
