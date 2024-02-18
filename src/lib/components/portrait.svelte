@@ -344,6 +344,10 @@
 	svg {
 		border-radius: 70% 30% / 25% 75%;
 
+		@include xs {
+			transform: scale(1.5);
+		}
+
 		ellipse,
 		path {
 			transition: all 0.2s ease-in;

@@ -38,6 +38,10 @@
 		-webkit-tap-highlight-color: transparent;
 		font-family: none;
 
+		@include xs {
+			font-weight: bold;
+		}
+
 		&:hover {
 			transform: rotate(90deg);
 		}

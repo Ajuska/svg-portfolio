@@ -48,7 +48,8 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		min-height: 100%;
+		min-height: 100dvh;
+		overflow: hidden;
 	}
 	.centered {
 		width: 90%;
