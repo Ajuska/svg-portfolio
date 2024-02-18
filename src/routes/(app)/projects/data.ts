@@ -1,12 +1,15 @@
 export const projects = [
 	{
-		slug: 'elektro-cz',
-		title: 'Elektro CZ',
-		tech: ['Javascript', 'Sketch'],
-		role: ['Programming', 'UI/UX Design', 'Content Creation', 'Translations'],
-		links: [{ name: 'Website', href: 'http://elektrocz.eu/en/' }],
+		slug: 'portfolio',
+		title: 'Portfolio',
+		tech: ['Javascript', 'Inkscape'],
+		role: ['Programming', 'UI/UX Design', 'Content Creation', 'Deployment'],
+		links: [
+			{ name: 'Website', href: 'http://andrea.vicar.dev' },
+			{ name: 'Code', href: 'https://github.com/Ajuska/svg-portfolio' }
+		],
 		description:
-			"This project spans through all web development phases, including consultation, design, and actual creation, with the exception of the deployment phase. The main goal was to craft a virtual business card with a touch of presentation. Additionally, it's available in three languages and features a user-friendly, mobile-responsive design, guaranteeing a delightful experience for all visitors.",
+			'This is a personal project aimed at pushing the boundaries of traditional portfolio design. My goal was to create visually striking and memorable SVG image that effectively conveys information. To expand and strenghten my technical skills, I utilized tools such as Bun, Vite, Svelte, and Inkscape throughout the development process. From the outset, I approached this project with thorough planning and estimation, utilizing Trello boards to ensure every development phase — from brainstorming and research to wireframing, development, and release.',
 		type: 'website'
 	},
 	{
@@ -17,6 +20,16 @@ export const projects = [
 		links: [{ name: 'Website', href: 'https://svatba.vicar.dev/' }],
 		description:
 			"Explore the anonymized version of our enchanting wedding website through the provided link. The page includes all necessary details for guests. Experience seamless transitions between light and dark modes, tailored to your device's system preference, along with language support. All 3D content is custom-made, and the page is mobile-friendly for easy access.",
+		type: 'website'
+	},
+	{
+		slug: 'elektro-cz',
+		title: 'Elektro CZ',
+		tech: ['Javascript', 'Sketch'],
+		role: ['Programming', 'UI/UX Design', 'Content Creation', 'Translations'],
+		links: [{ name: 'Website', href: 'http://elektrocz.eu/en/' }],
+		description:
+			"This project spans through all web development phases, including consultation, design, and actual creation, with the exception of the deployment phase. The main goal was to craft a virtual business card with a touch of presentation. Additionally, it's available in three languages and features a user-friendly, mobile-responsive design, guaranteeing a delightful experience for all visitors.",
 		type: 'website'
 	},
 	{
@@ -41,7 +54,7 @@ export const projects = [
 	},
 	{
 		slug: 'teddy',
-		title: 'Tidy Teddy, Messy Teddy',
+		title: 'Teddy',
 		tech: ['Unity', 'Blender'],
 		role: ['3D Art', 'Level Design', 'Story Creation', 'Shaders Creation'],
 		links: [

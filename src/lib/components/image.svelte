@@ -4,6 +4,7 @@
 	import eatGun from '$lib/assets/eat-gun.png';
 	import elektroCz from '$lib/assets/elektro-cz.png';
 	import needForJamf from '$lib/assets/need-for-jamf.png';
+	import portfolio from '$lib/assets/portfolio.png';
 	import teddy from '$lib/assets/teddy.png';
 	import wedding from '$lib/assets/wedding.png';
 
@@ -12,6 +13,7 @@
 		'eat-gun': eatGun,
 		'elektro-cz': elektroCz,
 		'need-for-jamf': needForJamf,
+		portfolio,
 		teddy,
 		wedding
 	};
