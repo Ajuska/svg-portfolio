@@ -32,7 +32,7 @@
 	.close {
 		color: $black-light;
 		font-size: 2rem;
-		padding: 0rem 0.6rem 0.4rem 0.6rem;
+		padding: 0rem 0.6rem 0.3rem 0.6rem;
 		cursor: pointer;
 		transition: all 0.3s ease-out;
 		-webkit-tap-highlight-color: transparent;

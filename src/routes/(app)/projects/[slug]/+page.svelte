@@ -52,9 +52,9 @@
 		}
 	}
 	.icon {
-		width: 2rem;
+		width: 1.5rem;
 		transition: 0.2s all ease-in;
-		padding: 0.3rem;
+		padding: 0.6rem 0.3rem 0.3rem 0.3rem;
 		fill: $pink-dark;
 		&:hover {
 			fill: $pink-light;
