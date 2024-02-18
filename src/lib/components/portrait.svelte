@@ -245,7 +245,7 @@
 	/>
 	<a
 		href="https://github.com/ajuska"
-		class="necklase-link left"
+		class="necklace-link left"
 		target="_blank"
 		aria-label="Github (opens in a new tab)"
 		rel="noopener noreferrer"
@@ -276,7 +276,7 @@
 	</a>
 	<a
 		href="https://artstation.com/andreawitcher"
-		class="necklase-link right"
+		class="necklace-link right"
 		target="_blank"
 		aria-label="ArtStation (opens in a new tab)"
 		rel="noopener noreferrer"
@@ -307,7 +307,7 @@
 	</a>
 	<a
 		href="https://linkedin.com/in/andrea-vicarova"
-		class="necklase-link middle"
+		class="necklace-link middle"
 		target="_blank"
 		aria-label="LinkedIn (opens in a new tab)"
 		rel="noopener noreferrer"
@@ -371,7 +371,7 @@
 			}
 		}
 
-		.necklase-link {
+		.necklace-link {
 			&.middle {
 				animation: gelatine 0.4s infinite;
 			}
