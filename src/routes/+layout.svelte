@@ -96,7 +96,9 @@
 
 	@font-face {
 		font-family: 'Roboto Condensed';
+		font-display: swap;
 		src:
+			local('Roboto Condensed'),
 			url('/src/lib/style/fonts/rbt.woff2') format('woff2'),
 			url('/src/lib/style/fonts/rbt.woff') format('woff'),
 			url('/src/lib/style/fonts/rbt.ttf') format('truetype');
@@ -105,7 +107,9 @@
 	// this font is by default only on iOS/macOS
 	@font-face {
 		font-family: 'Marker Felt';
+		font-display: swap;
 		src:
+			local('Marker Felt'),
 			url('/src/lib/style/fonts/mf.woff2') format('woff2'),
 			url('/src/lib/style/fonts/mf.woff') format('woff'),
 			url('/src/lib/style/fonts/mf.ttf') format('truetype');
