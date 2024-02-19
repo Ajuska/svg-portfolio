@@ -1,12 +1,12 @@
 <script lang="ts">
 	import { type ProjectSlug } from '$routes/(app)/projects/data';
-	import boostShip from '$lib/assets/boost-ship.png';
-	import eatGun from '$lib/assets/eat-gun.png';
-	import elektroCz from '$lib/assets/elektro-cz.png';
-	import needForJamf from '$lib/assets/need-for-jamf.png';
-	import portfolio from '$lib/assets/portfolio.png';
-	import teddy from '$lib/assets/teddy.png';
-	import wedding from '$lib/assets/wedding.png';
+	import boostShip from '$lib/assets/boost-ship.webp';
+	import eatGun from '$lib/assets/eat-gun.webp';
+	import elektroCz from '$lib/assets/elektro-cz.webp';
+	import needForJamf from '$lib/assets/need-for-jamf.webp';
+	import portfolio from '$lib/assets/portfolio.webp';
+	import teddy from '$lib/assets/teddy.webp';
+	import wedding from '$lib/assets/wedding.webp';
 
 	const imgs: { [key in ProjectSlug]?: string } = {
 		'boost-ship': boostShip,

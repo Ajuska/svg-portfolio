@@ -5,7 +5,7 @@
 	export let data;
 
 	$: getUrl = (slug: ProjectSlug): string =>
-		new URL(`/src/lib/assets/${slug}.png`, import.meta.url).href;
+		new URL(`/src/lib/assets/${slug}.webp`, import.meta.url).href;
 </script>
 
 <Header title="Projects" />
