@@ -23,7 +23,7 @@
 </script>
 
 {#if imgs[key]}
-	<img src={imgs[key]} alt={label} class="image" />
+	<img src={imgs[key]} alt={label} class={$$props.class} />
 {/if}
 
 <style>
@@ -31,5 +31,16 @@
 		width: 100%;
 		height: 100%;
 		object-fit: contain;
+	}
+
+	.image-sm {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 50%;
+		filter: grayscale(100%) contrast(120%);
 	}
 </style>

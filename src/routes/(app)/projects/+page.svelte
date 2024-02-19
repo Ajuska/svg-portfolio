@@ -1,11 +1,8 @@
 <script lang="ts">
 	import Header from '$lib/components/header.svelte';
-	import { type ProjectSlug } from '$routes/(app)/projects/data';
+	import Image from '$lib/components/image.svelte';
 
 	export let data;
-
-	$: getUrl = (slug: ProjectSlug): string =>
-		new URL(`/src/lib/assets/${slug}.webp`, import.meta.url).href;
 </script>
 
 <Header title="Projects" />
@@ -14,7 +11,7 @@
 	{#each data.projects as { slug, title, type }}
 		<div class="project-card">
 			<div class="image-container">
-				<img src={getUrl(slug)} alt={slug} />
+				<Image key={slug} label={slug} class="image-sm" />
 			</div>
 			<div>
 				<a href="/projects/{slug}" rel="noopener noreferrer">{title}</a>
@@ -34,16 +31,6 @@
 		height: 3rem;
 		overflow: hidden;
 		margin-right: 1rem;
-	}
-	.image-container img {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		border-radius: 50%;
-		filter: grayscale(100%) contrast(120%);
 	}
 
 	.wrapper {

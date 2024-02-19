@@ -22,7 +22,7 @@
 </Header>
 <div class="metadata">
 	<div class="image-container">
-		<Image key={data.project.slug} label={data.project.title} />
+		<Image key={data.project.slug} label={data.project.title} class="image" />
 	</div>
 	<div>
 		<h2>Tech</h2>
