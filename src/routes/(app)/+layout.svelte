@@ -4,11 +4,11 @@
 
 <style lang="scss">
 	.main {
-		background: $blue;
+		background: $blue-pale-light;
 		color: $black-light;
 		border-radius: 10% 5%;
 		padding: 2rem;
-		border: 0.5rem solid $blue-pale-light;
+		border: 0.5rem solid $white;
 		box-sizing: border-box;
 
 		@include gt-sm {

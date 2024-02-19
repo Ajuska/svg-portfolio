@@ -46,9 +46,11 @@
 	.project-card {
 		display: flex;
 		align-items: center;
-		background-color: $blue-pale-light;
+		background-color: $white;
+		// border: 1px solid $grey;
 		border-radius: 0.2rem;
 		padding: 1rem;
+		box-shadow: 0px 2px 5px 0px $black-light;
 
 		.label {
 			text-transform: uppercase;

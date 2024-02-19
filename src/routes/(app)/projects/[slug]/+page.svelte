@@ -27,12 +27,12 @@
 	<div>
 		<h2>Tech</h2>
 		{#each data.project.tech as tech}
-			<span class="tag yellow-dark">{tech}</span>
+			<span class="tag grey">{tech}</span>
 		{/each}
 
 		<h2>Roles</h2>
 		{#each data.project.role as role}
-			<span class="tag yellow">{role}</span>
+			<span class="tag pink">{role}</span>
 		{/each}
 	</div>
 </div>
@@ -84,13 +84,14 @@
 		padding: 0.2rem 0.5rem 0.3rem;
 		margin: 0.25rem 0.1rem;
 		border-radius: 0.2rem;
+		color: white;
 
-		&.yellow-dark {
-			background: $yellow-dark;
+		&.grey {
+			background: $grey-dark;
 		}
 
-		&.yellow {
-			background: $yellow;
+		&.pink {
+			background: $pink-darkest;
 		}
 	}
 </style>
