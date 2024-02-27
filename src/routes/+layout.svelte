@@ -60,6 +60,12 @@
 		@include gt-md {
 			width: 48%;
 		}
+		@include gt-lg {
+			width: 38%;
+		}
+		@include gt-xl {
+			width: 28%;
+		}
 	}
 
 	:root {
